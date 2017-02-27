@@ -1,1 +1,1 @@
-# DentalSite
+# Dental site
