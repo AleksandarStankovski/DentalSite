@@ -1,0 +1,32 @@
+<div class="container">
+	<h2>Блог</h2>
+	<div>
+		<a class="btn btn-default" data-ui-sref="blog.create">Нова статия</a>
+	</div>
+	<!--<div infinite-scroll = "getArticles()" infinite-scroll-distance = "5">-->
+	<div>
+		<table class="table">
+			<thead>
+				<tr>
+					<td data-ng-click="sort()">Дата</td>
+					<td>Заглавие</td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="article in articles">
+					<td>{{article.date | cmdate: 'dd-MM-yyyy'}}</td>
+					<td>{{article.title}}</td>
+					<td>
+						<a data-ui-sref="blog.edit({id: article._id})">Преглед</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<p>{{page}} / {{countPage}}</p>
+			<a data-ng-click="pagination('prev')">Предишна</a><br/>
+			<a data-ng-click="pagination('next')">Следваща</a>
+		</div>
+	</div>
+</div>

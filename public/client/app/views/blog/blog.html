@@ -1,0 +1,9 @@
+<h3>Новини</h3>
+<div>
+	<div data-ng-repeat="article in articles" class="news">
+		<a data-ui-sref="article({id: article._id})">
+			<h6>{{article.title}}</h6>
+			<span>{{article.date}}</span>
+		</a>
+	</div>
+</div>

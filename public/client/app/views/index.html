@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-ng-app="dentalsite">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/client/stylesheet/style.css">
+</head>
+<body data-ng-controller="appController">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a data-ui-sref="home">Начало</a>
+                </li>
+                <li>
+                    <a data-ui-sref="blog">Блог</a>
+                </li>
+            </ul>
+       </div>
+    </nav>
+    <div data-ui-view></div>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/client/app/app.js"></script>
+    <script type="text/javascript" src="/client/app/controllers/appController.js"></script>
+    <script type="text/javascript" src="/client/app/controllers/homeController.js"></script>
+    <script type="text/javascript" src="/client/app/controllers/blogController.js"></script>
+    <script type="text/javascript" src="/client/app/controllers/articleController.js"></script>
+    <script type="text/javascript" src="/client/app/services/blogService.js"></script>
+</body>
+</html>
